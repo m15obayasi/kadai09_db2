@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+body{
+    background-color: #a0afa0;
+    font-family: "Stick", serif;
+}
+
+.top{
+    display: flex;
+}
+
+.score{
+    font-size: 6vh;
+    width: 10vh;
+    text-align: center;
+    position: fixed;
+    left: 0px;
+}
+
+.title{
+    font-size: 3vh;
+    height: 15vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title span{
+    font-size: 6vh;
+}
+
+.timer{
+    font-size: 6vh;
+    width: 10vh;
+    text-align: center;
+    position: fixed;
+    right: 0px;
+}
+
+.startHalf{
+    background-color: #f2f8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;
+    font-size: 7vh;
+}
+
+.upperHalf{
+    background-color: #f2f8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 5vh;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+}
+
+.lowerHalf {
+    background-color: #e4f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 5vh;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+}
+
+.startHalf:hover, .upperHalf:hover,.lowerHalf:hover,.rankHalf:hover {
+    background-color: #8490b3;
+    color: #f2f8f2;
+    cursor: pointer;
+}
+
+.kekkaHalf{
+    background-color: #f2f8f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 7vh;
+}
+
+.rankHalf {
+    margin-top: 10px;
+    background-color: #e4f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 4vh;
+    font-weight: bold;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.form{
+    margin-top: 20px;
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.ranking{
+    display: none;
+}
