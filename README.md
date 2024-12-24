@@ -5,7 +5,7 @@
 - 前回分に機能的な改良を加えました。
 
 ## ③DEMO
-- https://lanmadaw.sakura.ne.jp/kadai09_db2_php/
+- https://lanmadaw.sakura.ne.jp/kadai09_db2/
 
 ## ⑤工夫した点・こだわった点
 
