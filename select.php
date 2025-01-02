@@ -6,14 +6,11 @@ try {
     $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (Exception $e) {
-    echo "<span class='error'>エラーがありました。</span><br>";
-    echo $e->getMessage();
-    exit();
+    exit('DB Connection Error:' . $e->getMessage());
 }
 
-$stmt = $pdo->prepare("SELECT * FROM kadai08_table;");
+$stmt = $pdo->prepare("SELECT * FROM kadai09_table;");
 $status = $stmt->execute();
-
 
 $view = "";
 if ($status == false) {
@@ -24,6 +21,9 @@ if ($status == false) {
         $view .= "<p>";
         $view .= h($result["id"]) . "　" . h($result["date"]) . "　/　"
             . h($result["name"]) . "　/　" . h($result["myScore"]) . "問連続正解";
+        $view .= '<a href="delete.php?id=' . $result['id'] . '">';
+        $view .= '[削除]';
+        $view .= '</a>';
         $view .= "</p>";
     }
 }

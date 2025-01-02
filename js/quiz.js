@@ -111,6 +111,5 @@ function scorePush() {
 
 // スコアを表示
 $(".rankHalf").on("click", function () {
-    $(".ranking").slideToggle(500);
-    console.log("出来た");
+    $(".ranking").slideToggle(300);
 });
